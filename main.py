@@ -75,7 +75,7 @@ def main(**kwargs):
     #model = getattr(models, opt.model)#(opt)
     model=models.CNNText_inception(opt)
 
-    '''
+
     if opt.model_path:
         model.load(opt.model_path)
     print(model)
@@ -157,7 +157,6 @@ def main(**kwargs):
                 pre_loss = loss_meter.value()[0]
                 loss_meter.reset()
                 score_meter.reset()
-'''
 
 
 if __name__ == "__main__":
